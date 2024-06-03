@@ -1,0 +1,235 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, 
+    Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+header {
+    padding: 0px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+header ul {
+    list-style-type: none;
+    display: flex;
+}
+header ul li {
+    margin-right: 10px;
+    font-size: 12px;
+}
+header ul li a {
+    text-decoration: none;
+    color: black;
+}
+.services {
+    background-color: #eee;
+    padding: 30px 40px ;
+}
+.services h1 {
+    text-align: center;
+}
+.blue {
+    color: rgb(85, 186, 226);
+}
+.services p {
+    text-align: center;
+    font-size: 11px;
+}
+.icons {
+    display: flex;
+    align-items: center;
+    padding: 30px 40px ;
+    column-gap: 20px;
+}
+.icons img {
+    width: 50px;
+    height: 50px;
+}
+.part-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.part-icon h4 {
+    text-align: center;
+    font-size: 13px;
+}
+.part-icon p {
+    font-size: 9px;
+    text-align: center;
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.589);
+}
+.about-us {
+    background-color: #eeeeee9c;
+    display: flex;
+    padding: 30px 40px ;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+.about-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about-us img {
+    width: 200px;
+    height: 150px;
+}
+.about-data p {
+    font-size: 5px;
+}
+.large {
+    display: flex;
+    column-gap: 20px;
+    padding: 30px 40px ;
+}
+.icon1 {
+    width: 30%;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.red {
+    background-color: rgb(199, 48, 48);
+}
+.dark-blue {
+    background-color: rgba(0, 0, 255, 0.753);
+}
+.green {
+    background-color: rgba(0, 128, 0, 0.685);
+}
+.skills {
+    padding: 30px 40px;
+    margin-top: 40px;
+    background-color: #eee;
+}
+.skills h1 {
+    text-align: center;
+}
+.skills-data {
+    margin-top: 20px;
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+.skills-data p {
+    font-weight: bold;
+    font-size: 12px;
+    width: 10%;
+}
+.skill-per-html,.skill-per-css,
+.skill-per-js , .skill-per-php ,
+.skill-per-pay {
+    width: 100%;
+    background-color: white;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    position: relative;
+    height: 30px;
+}
+.skill-per-html::before ,
+.skill-per-css::before,
+.skill-per-js::before,
+.skill-per-php::before,
+.skill-per-pay::before{
+    content: "60%";
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(34, 139, 180);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-weight: bold;
+    padding-right: 10px;
+}
+.skill-per-css::before {
+    width: 70%;
+    content: "70%";
+}
+.skill-per-js::before {
+    width: 80%;
+    content: "80%";
+}
+.skill-per-php::before {
+    width: 65%;
+    content: "65%";
+}
+.skill-per-pay::before {
+    width: 90%;
+    content: "90%";
+}
+footer {
+    background-color: rgba(0, 0, 0, 0.87);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+}
+footer div {
+    font-size: 9px;
+}
+footer span {
+    color: rgb(59, 164, 206);
+    font-weight: bold;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+@media (min-width:700px) {
+    header {
+        padding: 0px 110px;
+    }
+    .services , .icons ,.about-us,.large,.skills , footer {
+        padding: 30px 110px;
+    }
+}
+
+
+
+
+
+
+
+
+@media (min-width:1000px) {
+    header  {
+        padding: 0px 180px;
+    }
+    .icons , .services , .about-us,.large,.skills , footer {
+        padding: 30px 180px;
+    }
+    .icons {
+        justify-content: space-between;
+    }
+    .icon1 {
+        width: 32%;
+    }
+}
